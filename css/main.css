@@ -1,0 +1,32 @@
+.navbar-class{
+    background-color: black;
+    color: white;
+    height: 8pc;
+    margin: 0;
+}
+
+.navbar-class>a{
+    color: white;
+}
+
+.navbar-class>div{
+    padding-top: .5pc;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+.picture-and-text{
+    text-align: center;
+    color: white;
+    height: 30vh;
+    background-image: url(../img/theater-image-background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+@media screen {
+    
+}
