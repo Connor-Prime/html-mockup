@@ -3,6 +3,8 @@
     color: white;
     height: 8pc;
     margin: 0;
+    flex-wrap: wrap;
+    flex: row;
 }
 
 .navbar-class>a{
@@ -20,13 +22,104 @@
 .picture-and-text{
     text-align: center;
     color: white;
-    height: 30vh;
     background-image: url(../img/theater-image-background.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vw;
+}
+
+.showtimes{
+    padding-top: 3pc;
+    margin:auto;
+}
+
+.dateBox{
+    border: 2px solid black;
+    width: 100%;
+    background-color: darkgray;
+}
+
+.dateBox>h2{
+    font-size: 2em;
+}
+
+.show-boxes{
+    display: flex;
+    flex-wrap: row;
+    height: 12em;
+    border-bottom: black 2pt solid;
+    justify-content: space-between;
+}
+
+.show-image>img{
+    height: 10em;
+    padding: 1em;
+}
+
+.show-button-container{
+    align-self: center;
+    justify-self: end;
 
 }
 
-@media screen {
+.show-button-container>button{
+    border-radius: 10%;
+    background-color: rgb(255, 196, 0);
+    color: white;
+    font-size: 1.5em;
+    border-width: .1em;
+    text-shadow: black 2px 0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .show-boxes{
+        display: block;
+        height: 25em;
+    }
+    .show-boxes>div{
+        text-align: center;
+    }  
+
+    .navbar-class{
+        display:block;
+        text-align: center;
+    }
+
+    footer{
+        display: inline;
+        height: 30em;
+    }
+
+}
+
+footer{
     
+    display: flex;
+    flex-wrap: row;
+    height: 20em;
+    background-color: black;
+    justify-content:space-around;
+    margin: 1em;
+    border-top: black 3pt solid;
+}
+
+.set-text-white{
+    color: white;
+}
+
+footer>div{
+
+    padding: 2em;
+    padding-bottom: 2em;
+}
+
+.footer-map{
+
+    height: 8em;
+    margin: auto;
+}
+
+.inline{
+    display:inline;
 }
